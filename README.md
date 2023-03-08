@@ -1,2 +1,2 @@
 # SpringDataJPAIntroduction
-this is just a sample for my learning
+this is just a sample for my practice
