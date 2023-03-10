@@ -23,9 +23,6 @@ public class DataInitializer implements CommandLineRunner {
         Book ca = Book.builder().isbn("123127").title("clean architect").publisher("c martin").build();
         bookRepository.save(ca);
 
-        bookRepository.findAll().forEach(book -> {
-            System.out.println("book id : " + book.getId());
-            System.out.println("book title : " + book.getTitle());
-        });
+        bookRepository.findAll().forEach(System.out::println);
     }
 }
